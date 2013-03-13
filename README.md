@@ -23,7 +23,7 @@ accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a app ID, app secret, and callback URL.
 ```js
 
-    passport.use(new FacebookStrategy({
+    passport.use(new StripeStrategy({
         clientID: STRIPE_ID,
         clientSecret: STRIPE_SECRET,
         callbackURL: "http://localhost:3000/auth/stripe/callback"
