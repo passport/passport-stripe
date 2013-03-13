@@ -75,4 +75,4 @@ For example:
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2013 Matthew Conlen <[http://mathisonian.com/](http://mathisonian.com/)>, HuffPost Labs <[http://labs.huffingtonpost.com/](http://labs.huffingtonpost.com/)>
+Copyright (c) 2013 HuffPost Labs <[http://labs.huffingtonpost.com/](http://labs.huffingtonpost.com/)>
