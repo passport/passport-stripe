@@ -2,7 +2,14 @@
   "name": "passport-stripe",
   "version": "0.0.2",
   "description": "Stripe authentication strategy for Passport.",
-  "keywords": ["passport", "stripe", "auth", "authn", "authentication", "identity"],
+  "keywords": [
+    "passport",
+    "stripe",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/huffpostlabs/passport-stripe.git"
@@ -10,22 +17,28 @@
   "bugs": {
     "url": "http://github.com/huffpostlabs/passport-stripe/issues"
   },
-  "author": {
-    "name": "Matthew Conlen",
-    "email": "mc@mathisonian.com",
-    "url": "http://www.mathisonian.com/"
-  },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
+  "author": "Matthew Conlen <mc@mathisonian.com> (http://www.mathisonian.com/)",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "main": "./lib/passport-stripe",
   "dependencies": {
     "pkginfo": "0.2.x",
-    "passport-oauth": "~0.1.2"
+    "passport-oauth": "~0.1.2",
+    "url": "",
+    "util": ""
   },
   "devDependencies": {
     "vows": "0.6.x"
   },
-  "engines": { "node": ">= 0.4.0" }
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }
