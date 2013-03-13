@@ -21,6 +21,7 @@ The Stripe Connect authentication strategy authenticates users using a Stripe
 account and OAuth 2.0 tokens.  The strategy requires a `verify` callback, which
 accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a app ID, app secret, and callback URL.
+```js
 
     passport.use(new FacebookStrategy({
         clientID: STRIPE_ID,
@@ -34,6 +35,8 @@ accepts these credentials and calls `done` providing a user, as well as
       }
     ));
 
+```
+
 #### Authenticate Requests
 
 Use `passport.authenticate()`, specifying the `'stripe'` strategy, to
@@ -41,7 +44,7 @@ authenticate requests.
 
 For example, as route middleware in an [Express](http://expressjs.com/)
 application:
-
+```js
     app.get('/auth/stripe',
       passport.authenticate('stripe'));
 
@@ -51,6 +54,7 @@ application:
         // Successful authentication, redirect home.
         res.redirect('/');
       });
+```
 
 #### Scope
 
@@ -58,9 +62,10 @@ By default, stripe will authenticate with `read_only` permessions. `read_write` 
 via the `scope` option to `passport.authenticate()`.
 
 For example:
-
+```js
     app.get('/auth/stripe',
       passport.authenticate('stripe', { scope: 'read_write' }));
+```
 
 ## Credits
 
