@@ -29,7 +29,7 @@ accepts these credentials and calls `done` providing a user, as well as
         callbackURL: "http://localhost:3000/auth/stripe/callback"
       },
       function(accessToken, refreshToken, stripe_properties, done) {
-        User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+        User.findOrCreate({ stripeId: stripe_properties.stripe_user_id }, function (err, user) {
           return done(err, user);
         });
       }
